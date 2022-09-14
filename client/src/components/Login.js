@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 
 function Login({ setCurrentUser }) {
+let history = useHistory()
+
   const [formData, setFormData] = useState({
     name: "",
     password: "",
@@ -34,6 +36,10 @@ function Login({ setCurrentUser }) {
     });
   };
 
+  function handleLoginClick(){
+    history.push("/profile")
+  }
+
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="username">Username:</label>
@@ -52,7 +58,7 @@ function Login({ setCurrentUser }) {
         value={formData.password}
         onChange={handleChange}
       />
-      <button type="submit">Submit</button>
+      <button onClick = {handleLoginClick} type="submit">Submit</button>
     </form>
   );
 };
