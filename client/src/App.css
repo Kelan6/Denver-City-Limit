@@ -79,11 +79,19 @@
   font-family: six caps;
   text-transform: uppercase;
   background: #FF3743;
-  background-size: 100%;
   color: white;
   letter-spacing: .2em;
   font-size: 6rem;
+  text-shadow: .07em .07em 0 #FF3743, .1em .1em 0 white;
+  margin: 0px;
 }
+
   
+/*  THIS IS THE PROFILE CSS*/
+
+
+
+
+
 
 
