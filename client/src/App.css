@@ -2,7 +2,16 @@
 
 
 
+#banner{
+  display: flex;
+  justify-content: flex-end;
+  font-family: six-caps;
+}
 
+#bannerDCL{
+  display: flex;
+  
+}
 
 #navbar{
   background-color: #FF3743;
